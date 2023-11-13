@@ -41,7 +41,67 @@ gsap.to("#main", {
         trigger: "#main",
         scroller: "body",
         start: "top -30%",
-        end: "top -70",
+        end: "top -70%",
         scrub: 4
     }
 });
+
+gsap.from("#about-us,#about-us-in",{
+    y:35,
+    opacity:0,
+    duration:1,
+    scrollTrigger: {
+        trigger: "#about-us",
+        scroller: "body",
+        start: "top 60%",
+        end: "top 57%",
+        scrub:3
+    }
+})
+gsap.from(".card",{
+    y:35,
+    opacity:0,
+    duration:1,
+    scrollTrigger: {
+        trigger: ".card",
+        scroller: "body",
+        start: "top 90%",
+        end: "top 60%",
+        scrub:3
+    }
+})
+gsap.from("#pic,#content",{
+    opacity:0,
+    duration:1,
+    scrollTrigger: {
+        trigger: "#pic",
+        scroller: "body",
+        start: "top 90%",
+        end: "top 80%",
+        scrub:3
+    }
+})
+gsap.from("#left",{
+    y:-70,
+    x:-70,
+    duration:1,
+    scrollTrigger: {
+        trigger: "#left",
+        scroller: "body",
+        start: "top 55%",
+        end: "top 45%",
+        scrub:4
+    }
+})
+gsap.to("#right",{
+    y:-50,
+    x:-50,
+    duration:1,
+    scrollTrigger: {
+        trigger: "#right",
+        scroller: "body",
+        start: "top 90%",
+        end: "top 100%",
+        scrub:4
+    }
+})

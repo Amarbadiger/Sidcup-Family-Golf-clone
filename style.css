@@ -14,7 +14,15 @@ body {
     height: 100%;
     width: 100%;
 }
-
+body::-webkit-scrollbar{
+    display: block;
+    background-color: #95C11E;
+    width: 4px;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: white;
+    border-radius:12px;
+}
 #nav {
     /* background-color: red; */
     height: 145px;
@@ -343,6 +351,7 @@ button {
 
 button:hover {
     background-color: #95C11E;
+    z-index: 10;
 }
 
 #page6 {
@@ -376,4 +385,78 @@ button:hover {
 #page6 #right{
     right: 15%;
     bottom: 15%;
+}
+#page7{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    position: relative;
+    
+}
+.elem{
+    width: 25%;
+    height: 50%;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+.elem h2{
+    width: 100%;
+    height: 100%;
+    background-color: #95C11E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: #000;
+    position: absolute;
+    z-index: 10;
+    transition: all 0.5s ease-in-out;
+    border-radius: 30px;
+    scale: 1.1;
+}
+.elem img{
+    height:100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+.elem:hover h2{
+    color: white;
+    background-color: transparent;
+    scale: 1;
+}
+#page7 h1{
+    font-size: 90px;
+    position: absolute;
+    top:-6px;
+    font-family: poppins;
+    color: transparent;
+    -webkit-text-stroke: 2px white;
+}
+#footer{
+    width: 100%;
+    height: 40vh;
+    background-color: #95C11E;
+    background-image: linear-gradient(20deg, #9dd00edc 30%, rgba(19, 195, 42, 0.845) 70%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    color: black;
+}
+
+#f1 img{
+    width: 140px;
+}
+#f2,#f3{
+    font-size: 20px;
+    line-height:50px;
+}
+#f4{
+    width: 200px;
+    font-size: 20px;
 }
